@@ -7,9 +7,19 @@
 <body>
 <script>
 
-    let myColor = ['Red', 'Green', 'White', 'Black'];
+    let number = prompt();
 
-    document.write(myColor.join());
+    let result = [];
+
+    for (let i = 0; i < number.length - 1; i++) {
+        if (number[i] % 2 == 0 && number[i + 1] % 2 == 0) {
+            result.push(number[i], '-')
+        } else {
+            result.push(number[i])
+        }
+    }
+
+    document.write(result.join(''))
 
 </script>
 
